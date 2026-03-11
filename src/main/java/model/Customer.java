@@ -1,24 +1,19 @@
 package model;
 
-//User Management
-//Inheritance
+/**
+ * Customer class inherits from the User class.
+ * It reuses common fields like name, email, and password from the parent.
+ * This demonstrates the OOP concept of Inheritance.
+ */
 public class Customer extends User {
-    // Child Class
-    private String membershipType;
 
-    // Default Constructor
+    // Default constructor
     public Customer() {
-        super(); // call the Parent class constructor
+        // super() keyword calls the constructor of the parent class (User)
+        super();
     }
 
-    //Parameterized Constructor
-    public Customer(int id, String name, String email, String password, String role, String membershipType) {
-        // super keyword - get the data that in the parent class
-        super(id, name, email, password, role);
-        this.membershipType = membershipType;
-    }
-
-    // Getter and Setter for Child class variable
-    public String getMembershipType() { return membershipType; }
-    public void setMembershipType(String membershipType) { this.membershipType = membershipType; }
+    /* Note: We don't need to define name, email, or phone here
+       because they are already available in the User class.
+    */
 }
