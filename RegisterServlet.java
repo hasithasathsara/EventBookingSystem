@@ -18,6 +18,10 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+
+
+
+        
         User user = new User(name,email,password);
 
         UserService service = new UserService();
