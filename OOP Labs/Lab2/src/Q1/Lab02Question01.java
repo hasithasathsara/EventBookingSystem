@@ -10,6 +10,7 @@ public class Lab02Question01 {
         double otHours=0.0;
         System.out.print("Enter Employee Type (1,2,3) : ");
         employeeType=scn.nextByte();
+        
 
         System.out.print("Enter Basic Salary : ");
         basicSalary=scn.nextDouble();
